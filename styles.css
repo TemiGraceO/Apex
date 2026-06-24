@@ -107,8 +107,6 @@ body {
 /* ============ TOP CAC BAR ============ */
 .top-cac {
   width: 100%;
-  background: var(--night);
-  color: #a9d9ff;
   font-size: 0.688rem;
   letter-spacing: 0.015em;
   position: sticky;
@@ -284,6 +282,7 @@ body {
 
 /* ============ HERO ============ */
 .hero {
+  margin-top: -78px;
   position: relative;
   overflow: hidden;
   background: var(--bg);
