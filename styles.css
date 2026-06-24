@@ -111,6 +111,7 @@ body {
   color: #a9d9ff;
   font-size: 0.688rem;
   letter-spacing: 0.015em;
+  position: sticky;
 }
 @media (min-width: 768px) { .top-cac { font-size: 0.75rem; } }
 .cac-inner {
