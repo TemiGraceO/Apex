@@ -57,6 +57,9 @@ body {
   text-transform: uppercase;
   color: var(--sky);
 }
+.cac-toggle{
+  border: 2px solid pink;
+}
 .eyebrow.light { color: #7dd3fc; }
 .text-sky { color: var(--sky-500); }
 .op-60 { opacity: 0.6; }
@@ -137,7 +140,7 @@ body {
   letter-spacing: 0.17em;
   padding: 0.25rem 0.85rem;
   border-radius: 999px;
-  border: 1px solid #1f3556;
+  border: 1px solid #2d88d4;;
   background: none;
   color: #cfe9ff;
   cursor: pointer;
@@ -626,7 +629,7 @@ body {
 .service-card-text {
   margin-top: 0.625rem; font-size: 0.931rem; line-height: 1.7; color: #546779;
 }
-.service-bullets { margin-top: 1rem; list-style: none; padding: 0; space: 0.5rem; }
+.service-bullets { margin-top: 1rem; list-style: none; padding: 0; }
 .service-bullets li {
   display: flex; align-items: flex-start; gap: 0.5rem;
   font-size: 0.869rem; color: #3b4c5b; margin-bottom: 0.5rem;
