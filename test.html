@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>APEX Training Consults Ltd — Empowering Excellence Through Engineering</title>
+  <meta name="description" content="APEX Training Consults Ltd — Professional training, consultancy, engineering support, research, sustainability and technical development services in Nigeria. CAC Registered." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..700&family=Fragment+Mono&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f172a'/%3E%3Cpath stroke='%230ea5e9' stroke-width='1.7' fill='none' d='M16 6l9 5.2v9.6L16 26 7 20.8v-9.6z M7 11.2L16 16.4l9-5.2 M16 16.4V26'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ==================== TOP CAC BAR ==================== -->
+<div class="top-cac" id="topCac">
+  <div class="container">
+    <div class="cac-inner">
+      <div class="cac-left">
+        <span class="cac-text">CAC REGISTERED</span>
+        <span class="cac-sep">·</span>
+        <span class="cac-text-muted">Companies &amp; Allied Matters Act 2020 · Nigeria</span>
+      </div>
+      <button class="cac-toggle" id="bpToggle">
+        <span class="cac-toggle-text" id="bpToggleText">Blueprint mode</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== NAV ==================== -->
+<header class="nav" id="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#home" class="nav-brand">
+        <div class="nav-brand-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5"/>
+            <polyline points="2 8.5 12 15 22 8.5"/>
+            <line x1="12" y1="15" x2="12" y2="22"/>
+          </svg>
+          <span class="nav-brand-dot"></span>
+        </div>
+        <div class="nav-brand-text">
+          <div class="nav-brand-title">APEX<span class="nav-brand-r">®</span></div>
+          <div class="nav-brand-sub">TRAINING CONSULTS</div>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link" data-section="home">Home</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#services" class="nav-link" data-section="services">Services</a>
+        <a href="#expertise" class="nav-link" data-section="expertise">Expertise</a>
+        <a href="#cases" class="nav-link" data-section="cases">Cases</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+        <a href="#contact" class="nav-cta">Partner with us <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ==================== MOBILE MENU ==================== -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <div class="mobile-menu-title">Menu</div>
+    <button class="mobile-menu-close" id="mobileMenuClose"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+  </div>
+  <div class="mobile-menu-links">
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#expertise" class="mobile-link">Expertise</a>
+    <a href="#cases" class="mobile-link">Cases</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="#contact" class="mobile-cta">Partner with us</a>
+  </div>
+  <div class="mobile-menu-footer">CAC REGISTERED · NIGERIA</div>
+</div>
+
+<!-- ==================== SCROLL PROGRESS ==================== -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<main>
+
+<!-- ==================== HERO ==================== -->
+<section id="home" class="hero" data-bp="hero">
+  <div class="hero-bp-grid"></div>
+  <div class="hero-glows"><div class="hero-glow hero-glow-1"></div><div class="hero-glow hero-glow-2"></div></div>
+
+  <!-- Gears -->
+  <svg class="gear gear-1" viewBox="0 0 120 120" fill="none">
+    <g stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.088">
+      <rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(0 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(30 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(60 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(90 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(120 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(150 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(180 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(210 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(240 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(270 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(300 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(330 60 60)"/>
+      <circle cx="60" cy="60" r="34"/><circle cx="60" cy="60" r="16" fill="white"/>
+    </g>
+  </svg>
+  <svg class="gear gear-2 gear-rev" viewBox="0 0 120 120" fill="none">
+    <g stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.088">
+      <rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(0 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(30 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(60 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(90 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(120 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(150 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(180 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(210 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(240 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(270 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(300 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(330 60 60)"/>
+      <circle cx="60" cy="60" r="34"/><circle cx="60" cy="60" r="16" fill="white"/>
+    </g>
+  </svg>
+  <svg class="gear gear-3" viewBox="0 0 120 120" fill="none">
+    <g stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.088">
+      <rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(0 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(30 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(60 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(90 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(120 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(150 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(180 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(210 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(240 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(270 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(300 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(330 60 60)"/>
+      <circle cx="60" cy="60" r="34"/><circle cx="60" cy="60" r="16" fill="currentColor" fill-opacity="0.09"/>
+    </g>
+  </svg>
+
+  <!-- tech drawing -->
+  <div class="hero-tech-drawing">
+    <svg viewBox="0 0 268 268" fill="none">
+      <circle cx="134" cy="134" r="103" stroke="currentColor" stroke-width="1" stroke-dasharray="4 5"/>
+      <circle cx="134" cy="134" r="62" stroke="currentColor" stroke-width="1"/>
+      <line x1="28" y1="134" x2="240" y2="134" stroke="currentColor" stroke-width="1"/>
+      <line x1="134" y1="28" x2="134" y2="240" stroke="currentColor" stroke-width="1"/>
+      <path d="M28 134 L70 100 L198 100 L240 134 L198 168 L70 168 Z" stroke="currentColor" stroke-width="1.2" class="dash-flow" fill="none"/>
+      <text x="144" y="127" font-size="11" fill="currentColor" font-family="Fragment Mono, monospace">Ø200</text>
+    </svg>
+  </div>
+
+  <!-- measure -->
+  <svg class="hero-measure" viewBox="0 0 320 180" fill="none">
+    <line x1="22" y1="30" x2="298" y2="30" stroke="currentColor" stroke-width="1"/>
+    <line x1="22" y1="19" x2="22" y2="41" stroke="currentColor" stroke-width="1"/>
+    <line x1="298" y1="19" x2="298" y2="41" stroke="currentColor" stroke-width="1"/>
+    <text x="160" y="24" text-anchor="middle" font-size="10" fill="currentColor" font-family="Fragment Mono, monospace">280 mm</text>
+    <line x1="22" y1="30" x2="22" y2="162" stroke="currentColor" stroke-width="1"/>
+    <line x1="10" y1="30" x2="34" y2="30" stroke="currentColor" stroke-width="1"/>
+    <line x1="10" y1="162" x2="34" y2="162" stroke="currentColor" stroke-width="1"/>
+    <text x="15" y="97" font-size="10" fill="currentColor" font-family="Fragment Mono, monospace" transform="rotate(-90 15 97)">130 mm</text>
+  </svg>
+
+  <!-- pulse -->
+  <div class="hero-pulse"><div class="hero-pulse-dot"></div><div class="hero-pulse-ring"></div></div>
+
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <div class="hero-pill reveal" data-delay="0">
+        <span class="hero-pill-dot"></span>
+        CAC Registered · Companies &amp; Allied Matters Act 2020 · Nigeria
+      </div>
+
+      <h1 class="hero-title reveal" data-delay="80">
+        Empowering <span class="text-sky">Excellence</span>
+      </h1>
+      <div class="hero-subtitle reveal" data-delay="220">
+        Through Training, Innovation &amp; Engineering.
+      </div>
+
+      <p class="hero-lead reveal" data-delay="340">
+        APEX Training Consults Ltd is a professional firm dedicated to training, consultancy,
+        engineering support, research, sustainability and technical development — driven by excellence, results and innovation.
+      </p>
+
+      <div class="hero-ctas reveal" data-delay="460">
+        <a href="#contact" class="btn btn-dark">Partner With Us <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a href="#services" class="btn btn-ghost">Explore Our Services</a>
+      </div>
+
+      <div class="hero-meta reveal" data-delay="500">
+        <span>RC · CAC Nigeria</span><span class="hero-meta-dot">•</span>
+        <span>Multi-Disciplinary</span><span class="hero-meta-dot">•</span>
+        <span>Research-Driven</span><span class="hero-meta-dot">•</span>
+        <span>Sustainability-First</span>
+      </div>
+    </div>
+
+    <!-- marquee -->
+    <div class="marquee reveal" data-delay="600">
+      <div class="marquee-track" id="marqueeTrack">
+        <span><span class="op-80">◉</span> ISO 9001:2015</span>
+        <span><span class="op-80">◉</span> HSE Compliance</span>
+        <span><span class="op-80">◉</span> Risk Management PSM</span>
+        <span><span class="op-80">◉</span> EIA &amp; Compliance Audits</span>
+        <span><span class="op-80">◉</span> Engineering Design &amp; PMC</span>
+        <span><span class="op-80">◉</span> Sustainability &amp; ESG</span>
+        <span><span class="op-80">◉</span> Research &amp; Innovation</span>
+        <span><span class="op-80">◉</span> Workforce Development</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TRUST STRIP ==================== -->
+<section class="trust-strip" id="trustStrip">
+  <div class="container trust-inner">
+    <div class="trust-left">
+      <div class="trust-eyebrow">// TRUSTED ACROSS INDUSTRIES</div>
+      <div class="trust-heading">Operators, EPCs &amp; public institutions.</div>
+    </div>
+    <div class="trust-logos">
+      <span>SHELL JV</span><span>NNPC Ltd</span><span>DANGOTE</span><span>BUA GROUP</span>
+      <span>TOTALENERGIES</span><span>FMST</span><span>LAFARGE</span>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ABOUT ==================== -->
+<section id="about" class="section">
+  <div class="container about-grid">
+    <div class="about-visual">
+      <div class="about-card scanline">
+        <div class="about-card-bp"></div>
+        <svg viewBox="0 0 420 520" fill="none" class="about-svg">
+          <rect x="42" y="62" width="336" height="396" stroke="currentColor" stroke-width="1" stroke-dasharray="4 4"/>
+          <circle cx="210" cy="262" r="113" stroke="currentColor" stroke-width="1.25"/>
+          <circle cx="210" cy="262" r="72" stroke="currentColor" stroke-width="1.15"/>
+          <circle cx="210" cy="262" r="32" stroke="currentColor" stroke-width="1.1"/>
+          <line x1="97" y1="262" x2="323" y2="262" stroke="currentColor" stroke-width="1"/>
+          <line x1="210" y1="149" x2="210" y2="375" stroke="currentColor" stroke-width="1"/>
+          <circle cx="303" cy="262" r="3.7" fill="currentColor"/><circle cx="278" cy="328" r="3.7" fill="currentColor"/>
+          <circle cx="210" cy="356" r="3.7" fill="currentColor"/><circle cx="142" cy="328" r="3.7" fill="currentColor"/>
+          <circle cx="117" cy="262" r="3.7" fill="currentColor"/><circle cx="142" cy="196" r="3.7" fill="currentColor"/>
+          <circle cx="210" cy="170" r="3.7" fill="currentColor"/><circle cx="278" cy="196" r="3.7" fill="currentColor"/>
+          <text x="210" y="476" text-anchor="middle" font-size="11" fill="currentColor" font-family="Fragment Mono, monospace">FIG. 01 — SYSTEM SCHEMATIC / APEX-2026</text>
+          <text x="54" y="82" font-size="10" fill="currentColor" font-family="Fragment Mono, monospace">REV. 02</text>
+          <text x="366" y="82" text-anchor="end" font-size="10" fill="currentColor" font-family="Fragment Mono, monospace">SCALE 1:100</text>
+        </svg>
+        <div class="about-card-meta"><span>◉ LIVE</span><span>APEX / ENGINEERING</span></div>
+      </div>
+      <div class="about-badge" id="aboutBadge">
+        <div class="about-badge-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <div><div class="about-badge-title">CAC Certified</div><div class="about-badge-sub">Feb 2026 · Nigeria</div></div>
+      </div>
+    </div>
+
+    <div class="about-copy">
+      <div class="eyebrow">// About the firm</div>
+      <h2 class="about-title">A professional firm dedicated to <span class="text-sky">training, consultancy and engineering support.</span></h2>
+      <p class="about-text">Apex Training Consults Ltd is registered under the <strong>Companies and Allied Matters Act 2020, Nigeria</strong>. We provide services across engineering, science, technology and allied disciplines — from certification programmes and management consultancy to risk &amp; safety engineering, environmental audits and sustainable innovation.</p>
+
+      <div class="about-cards">
+        <div class="mini-card"><div class="mini-title">Registered Company</div><div class="mini-sub">CAC, Nigeria — RC Number</div></div>
+        <div class="mini-card"><div class="mini-title">Multi-Disciplinary</div><div class="mini-sub">Engineering · Science · Technology</div></div>
+        <div class="mini-card"><div class="mini-title">Research-Driven</div><div class="mini-sub">Innovation, IP &amp; tech transfer</div></div>
+        <div class="mini-card"><div class="mini-title">Sustainability-First</div><div class="mini-sub">Climate, ESG &amp; circular economy</div></div>
+      </div>
+
+      <div class="about-btns">
+        <a href="#services" class="btn btn-dark-sm">View services <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+        <button class="btn btn-ghost-sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Capability statement</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SERVICES ==================== -->
+<section id="services" class="section section-muted">
+  <div class="container">
+    <div class="services-head">
+      <div>
+        <div class="eyebrow">// What we do</div>
+        <h3 class="section-title">Three pillars of expertise.</h3>
+      </div>
+      <p class="services-lead">Integrated services that help organisations build capability, manage risk and deliver engineering projects with confidence.</p>
+    </div>
+
+    <div class="services-filters" id="servicesFilters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Training">Training</button>
+      <button class="filter-btn" data-filter="Consultancy">Consultancy</button>
+      <button class="filter-btn" data-filter="Engineering">Engineering</button>
+      <span class="filter-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg> Updated 12 Feb 2026</span>
+    </div>
+
+    <div class="service-grid" id="serviceGrid">
+      <article class="service-card" data-tag="Training">
+        <div class="service-visual">
+          <div class="service-shape service-shape-square"></div>
+        </div>
+        <div class="service-tag-label">Training <span class="op-60">· TR-01</span></div>
+        <h4 class="service-card-title">Professional Training &amp; Certification</h4>
+        <p class="service-card-text">Accredited certification programmes, immersive workshops and enterprise capacity building across engineering, science and technology disciplines.</p>
+        <ul class="service-bullets">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> ISO 9001 / 14001 / 45001 pathways</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> HSE, NEBOSH, and competency mapping</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Custom in-plant curricula &amp; LMS</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Assessments, audits &amp; re-certification</li>
+        </ul>
+        <a href="#contact" class="service-link">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </article>
+
+      <article class="service-card" data-tag="Consultancy">
+        <div class="service-visual">
+          <div class="service-shape-wrap"><div class="service-shape service-shape-circle"></div><div class="service-shape-ring"></div></div>
+        </div>
+        <div class="service-tag-label">Consultancy <span class="op-60">· MG-02</span></div>
+        <h4 class="service-card-title">Management &amp; Leadership</h4>
+        <p class="service-card-text">Board-ready advisory across strategy, regulatory compliance, quality systems and operational excellence for public and private sector clients.</p>
+        <ul class="service-bullets">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Corporate governance frameworks</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Regulatory &amp; compliance assurance</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> ESG, quality &amp; process optimisation</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Leadership development sprints</li>
+        </ul>
+        <a href="#contact" class="service-link">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </article>
+
+      <article class="service-card" data-tag="Engineering">
+        <div class="service-visual">
+          <svg viewBox="0 0 120 110" class="service-shape-triangle">
+            <defs><linearGradient id="tg-rs" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#f6b33b"/><stop offset="100%" stop-color="#f97316"/></linearGradient></defs>
+            <polygon points="60,6 112,104 8,104" fill="url(#tg-rs)" />
+          </svg>
+        </div>
+        <div class="service-tag-label">Engineering <span class="op-60">· RS-03</span></div>
+        <h4 class="service-card-title">Risk &amp; Safety Engineering</h4>
+        <p class="service-card-text">Quantitative risk, HAZID/HAZOP, safety case development, and full lifecycle accident prevention engineering.</p>
+        <ul class="service-bullets">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Bow-tie, LOPA, FMEA &amp; QRA</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Process safety management</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Emergency response planning</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Asset integrity assurance</li>
+        </ul>
+        <a href="#contact" class="service-link">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== EXPERTISE ==================== -->
+<section id="expertise" class="section">
+  <div class="container">
+    <div class="exp-head">
+      <div class="eyebrow">// Full-spectrum capability</div>
+      <h3 class="section-title">Eight ways we engineer progress.</h3>
+      <p class="exp-head-text">From environmental audits to digital transformation, equipment supply to research commercialisation.</p>
+    </div>
+
+    <div class="exp-search-wrap">
+      <div class="exp-search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="expSearch" placeholder="Search capability (e.g. HAZOP, digital, ESG)" />
+        <button class="exp-clear" id="expClear">Clear</button>
+      </div>
+    </div>
+
+    <div class="exp-grid" id="expGrid">
+      <div class="exp-card" data-search="EIA & Audits Environmental impact, compliance & closure studies EX-07">
+        <div class="exp-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
+        <div class="exp-card-title">EIA &amp; Audits</div>
+        <div class="exp-card-text">Environmental impact, compliance &amp; closure studies</div>
+        <span class="exp-card-code">EX-07</span>
+      </div>
+      <div class="exp-card" data-search="Innovation Tech R&D pilots, tech transfer, IP monetisation EX-12">
+        <div class="exp-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg></div>
+        <div class="exp-card-title">Innovation Tech</div>
+        <div class="exp-card-text">R&amp;D pilots, tech transfer, IP monetisation</div>
+        <span class="exp-card-code">EX-12</span>
+      </div>
+      <div class="exp-card" data-search="Strategic Alliances Partnership design, JV facilitation, consortiums EX-04">
+        <div class="exp-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 11l8-5-8-5-8 5 8 5zM4 13l8 5 8-5M4 17l8 5 8-5"/></svg></div>
+        <div class="exp-card-title">Strategic Alliances</div>
+        <div class="exp-card-text">Partnership design, JV facilitation, consortiums</div>
+        <span class="exp-card-code">EX-04</span>
+      </div>
+      <div class="exp-card" data-search="Digital Solutions Data ops, digital twins, asset telemetry EX-19">
+        <div class="exp-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <div class="exp-card-title">Digital Solutions</div>
+        <div class="exp-card-text">Data ops, digital twins, asset telemetry</div>
+        <span class="exp-card-code">EX-19</span>
+      </div>
+      <div class="exp-card" data-search="Equipment Supply Industrial, lab & safety instrumentation EX-23">
+        <div class="exp-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+        <div class="exp-card-title">Equipment Supply</div>
+        <div class="exp-card-text">Industrial, lab &amp; safety instrumentation</div>
+        <span class="exp-card-code">EX-23</span>
+      </div>
+      <div class="exp-card" data-search="Workforce Growth Executive search, graduate pipelines, skilling EX-11">
+        <div class="exp-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <div class="exp-card-title">Workforce Growth</div>
+        <div class="exp-card-text">Executive search, graduate pipelines, skilling</div>
+        <span class="exp-card-code">EX-11</span>
+      </div>
+      <div class="exp-card" data-search="Project Services Design, procurement, construction, PMC EX-31">
+        <div class="exp-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
+        <div class="exp-card-title">Project Services</div>
+        <div class="exp-card-text">Design, procurement, construction, PMC</div>
+        <span class="exp-card-code">EX-31</span>
+      </div>
+      <div class="exp-card" data-search="Research Driven Evidence studies, publications, policy papers EX-06">
+        <div class="exp-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+        <div class="exp-card-title">Research Driven</div>
+        <div class="exp-card-text">Evidence studies, publications, policy papers</div>
+        <span class="exp-card-code">EX-06</span>
+      </div>
+    </div>
+
+    <div class="exp-industries">
+      <div>Upstream • Midstream • Downstream</div>
+      <div>Power &amp; Utilities</div>
+      <div>Manufacturing &amp; FMCG</div>
+      <div>Infrastructure &amp; EPC</div>
+      <div>Public Sector</div>
+      <div>Mining &amp; Heavy Industry</div>
+      <div>Healthcare &amp; Life-Sciences</div>
+      <div>Financial Assurance</div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CASES ==================== -->
+<section id="cases" class="section section-mint">
+  <div class="container">
+    <div class="cases-head">
+      <div>
+        <div class="eyebrow">// Selected project outcomes</div>
+        <h3 class="section-title">Case snapshots.</h3>
+      </div>
+      <div class="cases-dots" id="casesDots">
+        <button class="cases-dot active" data-case="0"></button>
+        <button class="cases-dot" data-case="1"></button>
+        <button class="cases-dot" data-case="2"></button>
+      </div>
+    </div>
+    <div class="cases-carousel" id="casesCarousel">
+      <div class="case-card active">
+        <div class="case-sector">Energy / Offshore</div>
+        <div class="case-title">Safety case rebuild for 3 producing assets</div>
+        <div class="case-result">41% reduction in LTI exposure, regulatory sign-off in 11 weeks</div>
+        <div class="case-tags"><span>HAZOP × 9</span><span>Bow-tie 142 barriers</span><span>12 SIMOPS interfaces</span></div>
+      </div>
+      <div class="case-card">
+        <div class="case-sector">Manufacturing</div>
+        <div class="case-title">ISO 45001 + 14001 integrated rollout</div>
+        <div class="case-result">Zero non-conformances at stage 2. 1.2M safe man-hours.</div>
+        <div class="case-tags"><span>6 plants</span><span>1,840 staff trained</span><span>19 procedures authored</span></div>
+      </div>
+      <div class="case-card">
+        <div class="case-sector">Public Sector</div>
+        <div class="case-title">National skills standard for process technicians</div>
+        <div class="case-result">Adopted across 4 agencies. 2,300 certified Y1.</div>
+        <div class="case-tags"><span>NOS mapping</span><span>8 modules</span><span>Digital credentialing</span></div>
+      </div>
+    </div>
+    <div class="cases-arrows">
+      <button class="cases-arrow" id="casePrev">‹</button>
+      <button class="cases-arrow" id="caseNext">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== STATS ==================== -->
+<section class="stats">
+  <div class="stats-bp"></div>
+  <svg class="gear gear-stats-1" viewBox="0 0 120 120" fill="none">
+    <g stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.088">
+      <rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(0 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(30 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(60 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(90 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(120 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(150 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(180 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(210 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(240 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(270 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(300 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(330 60 60)"/>
+      <circle cx="60" cy="60" r="34"/><circle cx="60" cy="60" r="16" fill="#0b1524"/>
+    </g>
+  </svg>
+  <svg class="gear gear-stats-2 gear-rev" viewBox="0 0 120 120" fill="none">
+    <g stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.088">
+      <rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(0 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(30 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(60 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(90 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(120 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(150 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(180 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(210 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(240 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(270 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(300 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(330 60 60)"/>
+      <circle cx="60" cy="60" r="34"/><circle cx="60" cy="60" r="16" fill="#0b1524"/>
+    </g>
+  </svg>
+
+  <div class="container stats-inner">
+    <div class="eyebrow light">// Impact in numbers</div>
+    <h3 class="section-title light">Trusted across industries.</h3>
+    <div class="stats-grid" id="statsGrid">
+      <div class="stat">
+        <div class="stat-num" data-target="127" data-suffix="+">0</div>
+        <div class="stat-label">Clients Served</div>
+        <div class="stat-sub">Organisations trained &amp; consulted</div>
+        <div class="stat-rule"></div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" data-target="10" data-suffix="">0</div>
+        <div class="stat-label">Service Areas</div>
+        <div class="stat-sub">Training, risk, audit, projects &amp; more</div>
+        <div class="stat-rule"></div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" data-target="7" data-suffix="+">0</div>
+        <div class="stat-label">Industries</div>
+        <div class="stat-sub">Energy, manufacturing, public &amp; private</div>
+        <div class="stat-rule"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TESTIMONIALS ==================== -->
+<section class="section">
+  <div class="container">
+    <div class="test-head">
+      <div class="eyebrow">// Client voices</div>
+      <h3 class="section-title">What our partners say.</h3>
+    </div>
+    <div class="test-grid">
+      <figure class="test-card">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M7.17 6C4.87 6 3 7.87 3 10.17V18h7.83v-7.83H6.5c0-1.47 1.2-2.67 2.67-2.67V6zm10 0c-2.3 0-4.17 1.87-4.17 4.17V18H21v-7.83h-4.33c0-1.47 1.2-2.67 2.67-2.67V6z"/></svg>
+        <blockquote>Apex enabled us to achieve triple certification and scale plant capability in one calendar year. Precise, pragmatic.</blockquote>
+        <figcaption><div class="test-name">Dr. Y. Okoro</div><div class="test-role">Operations Director, Energy Firm</div></figcaption>
+      </figure>
+      <figure class="test-card">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M7.17 6C4.87 6 3 7.87 3 10.17V18h7.83v-7.83H6.5c0-1.47 1.2-2.67 2.67-2.67V6zm10 0c-2.3 0-4.17 1.87-4.17 4.17V18H21v-7.83h-4.33c0-1.47 1.2-2.67 2.67-2.67V6z"/></svg>
+        <blockquote>Outstanding consultancy on HSE and regulatory compliance — disciplined, documentation-first, board-ready.</blockquote>
+        <figcaption><div class="test-name">A. Adebayo</div><div class="test-role">Plant Manager, Manufacturing</div></figcaption>
+      </figure>
+      <figure class="test-card">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M7.17 6C4.87 6 3 7.87 3 10.17V18h7.83v-7.83H6.5c0-1.47 1.2-2.67 2.67-2.67V6zm10 0c-2.3 0-4.17 1.87-4.17 4.17V18H21v-7.83h-4.33c0-1.47 1.2-2.67 2.67-2.67V6z"/></svg>
+        <blockquote>Research-driven insights that shaped our sustainability strategy and ESG reporting. Clean, rigorous work.</blockquote>
+        <figcaption><div class="test-name">P. Okafor</div><div class="test-role">Head of Sustainability</div></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section id="contact" class="section section-muted">
+  <div class="container contact-grid">
+    <div>
+      <div class="eyebrow">// Start a project</div>
+      <h3 class="contact-title">Let's build something <span class="text-sky">engineered for excellence.</span></h3>
+      <p class="contact-text">Reach out for training, consultancy, engineering support, research partnerships or equipment supply. Our team will respond within one business day.</p>
+
+      <div class="contact-info">
+        <div class="contact-row">
+          <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zM22 6l-10 7L2 6"/></svg></div>
+          <div><div class="contact-k">EMAIL</div><div class="contact-v">contact@apextrainingconsults.com</div></div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div><div class="contact-k">PHONE</div><div class="contact-v">+234 (0) 800-APEX-NG</div></div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><div class="contact-k">LOCATION</div><div class="contact-v">Lagos · Abuja · Port Harcourt — Nigeria</div></div>
+        </div>
+      </div>
+
+      <div class="contact-reg">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg>
+        <span>CAC Registered Entity</span>
+        <p>APEX Training Consults Ltd — Registered under the Companies and Allied Matters Act 2020, Nigeria. Compliance documentation available upon request.</p>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+      <div class="form-label">ENQUIRY FORM</div>
+      <div class="form-title">Tell us about your project</div>
+
+      <div class="form-row">
+        <label><span>Full name</span><input required id="fName" placeholder="Jane Doe" /></label>
+        <label><span>Work email</span><input required type="email" id="fEmail" placeholder="jane@company.com" /></label>
+      </div>
+
+      <label class="mt-16"><span>Service of interest</span>
+        <select id="fSvc">
+          <option>Professional Training &amp; Certification</option>
+          <option>Management &amp; Leadership Consultancy</option>
+          <option>Risk &amp; Safety Engineering</option>
+          <option>EIA &amp; Audits</option>
+          <option>Innovation &amp; Technology</option>
+          <option>Equipment Supply</option>
+          <option>Project Services</option>
+          <option>Research Partnership</option>
+        </select>
+      </label>
+
+      <label class="mt-16"><span>Message</span><textarea required id="fMsg" rows="5" placeholder="Tell us briefly about your needs..."></textarea></label>
+
+      <button type="submit" class="form-btn" id="formSubmit">Send enquiry</button>
+      <p class="form-note">By submitting, you agree to our privacy policy. We respond within 24 hours.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="footer-brand-row">
+        <div class="footer-brand-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5"/><polyline points="2 8.5 12 15 22 8.5"/><line x1="12" y1="15" x2="12" y2="22"/></svg></div>
+        <div><div class="footer-brand-title">APEX<span>®</span></div><div class="footer-brand-sub">TRAINING CONSULTS LTD</div></div>
+      </div>
+      <p class="footer-about">A professional firm dedicated to training, consultancy, engineering support, research, sustainability and technical development — registered under the Companies and Allied Matters Act 2020, Nigeria.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="𝕏">𝕏</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="Facebook">f</a>
+      </div>
+    </div>
+    <div class="footer-col"><h5>Company</h5><a href="#">About Us</a><a href="#">Leadership</a><a href="#">Recognition</a><a href="#">Careers</a></div>
+    <div class="footer-col"><h5>Services</h5><a href="#">Professional Training</a><a href="#">Engineering &amp; Projects</a><a href="#">Sustainability</a><a href="#">Consultancy</a></div>
+    <div class="footer-col"><h5>Expertise</h5><a href="#">Risk Management</a><a href="#">Technology</a><a href="#">Consultancy</a><a href="#">Research</a></div>
+    <div class="footer-col"><h5>Contact</h5><a href="#">Email</a><a href="#">Phone</a><a href="#">Nigeria Map</a><a href="#">Support</a></div>
+    <div class="footer-col"><h5>Legal</h5><a href="#">CAC Registered</a><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Disclaimer</a></div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© <span id="year"></span> APEX Training Consults Ltd. All rights reserved. · RC Number · CAC, Nigeria.</span>
+      <span class="footer-bottom-mono">Empowering Excellence · Training · Innovation · Engineering</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Engineering Console -->
+<div class="console" id="console">
+  <div class="console-header">
+    <span>ENGINEERING CONSOLE</span>
+    <span class="console-live"><span class="console-dot"></span> LIVE</span>
+  </div>
+  <div class="console-grid">
+    <div><div class="console-k">UPTIME</div><div class="console-v" id="consoleUptime">99.973%</div></div>
+    <div><div class="console-k">QUEUE</div><div class="console-v" id="consoleQueue">6</div></div>
+    <div><div class="console-k">CASES YTD</div><div class="console-v" id="consoleCases">28</div></div>
+    <div><div class="console-k">LATENCY</div><div class="console-v" id="consoleLatency">14 ms</div></div>
+  </div>
+  <div class="console-footer">HSE / ISO telemetry · Lagos · Abuja · Port Harcourt</div>
+</div>
+
+<script>
+/* APEX Training Consults Ltd — Embedded JS */
+!function(){var d=document,g=d.getElementById;
+function q(e){return d.querySelectorAll(e)} function i(e){return g.call(d,e)}
+var Y=i("year");Y&&(Y.textContent=new Date().getFullYear());
+var B=i("bpToggle"),BT=i("bpToggleText");
+B&&B.addEventListener("click",function(){d.body.classList.toggle("bp-mode"),BT&&(BT.textContent=d.body.classList.contains("bp-mode")?"Paper mode":"Blueprint mode")});
+var N=i("navToggle"),M=i("mobileMenu"),O=i("mobileOverlay"),C=i("mobileMenuClose");
+function oM(){M&&M.classList.add("open"),O&&O.classList.add("open"),d.body.style.overflow="hidden"}
+function cM(){M&&M.classList.remove("open"),O&&O.classList.remove("open"),d.body.style.overflow=""}
+N&&N.addEventListener("click",oM),C&&C.addEventListener("click",cM),O&&O.addEventListener("click",cM),
+q(".mobile-link").forEach(function(e){e.addEventListener("click",cM)});
+var P=i("scrollProgress");P&&window.addEventListener("scroll",function(){var s=window.scrollY,h=d.documentElement.scrollHeight-window.innerHeight;P.style.transform="scaleX("+(h>0?s/h:0)+")"});
+var NL=q(".nav-link"),SX=["home","about","services","expertise","cases","contact"];
+NL.length&&"IntersectionObserver"in window&&function(){var o=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting){var t=e.target.id;NL.forEach(function(l){l.classList.remove("active"),l.getAttribute("href")==="#"+t&&l.classList.add("active")})}})},{threshold:.35,rootMargin:"-80px 0px -50% 0px"});SX.forEach(function(e){var t=i(e);t&&o.observe(t)})}();
+var RV=q(".reveal");
+if(RV.length&&"IntersectionObserver"in window){var RO=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting){var d=parseInt(e.target.getAttribute("data-delay")||"0",10);setTimeout(function(){e.target.classList.add("visible")},d),RO.unobserve(e.target)}})},{threshold:.12,rootMargin:"0px 0px -40px 0px"});RV.forEach(function(e){RO.observe(e)})}else RV.forEach(function(e){e.classList.add("visible")});
+var FB=q(".filter-btn"),SC=q(".service-card");
+FB.length&&FB.forEach(function(b){b.addEventListener("click",function(){FB.forEach(function(b2){b2.classList.remove("active")}),b.classList.add("active");var f=b.getAttribute("data-filter"),DE=q(".filter-date")[0];DE&&(DE.style.display=f==="all"?"flex":"none");SC.forEach(function(c){f&&f!=="all"?c.classList.toggle("hidden",c.getAttribute("data-tag")!==f):c.classList.remove("hidden")})})});
+var ES=i("expSearch"),EC=i("expClear"),EX=q(".exp-card"),EN=q(".exp-no-results")[0];
+ES&&ES.addEventListener("input",function(){var q=this.value.trim().toLowerCase();EC&&EC.classList.toggle("show",q.length>0);var v=0;EX.forEach(function(c){var d=(c.getAttribute("data-search")||"").toLowerCase(),m=!q||d.includes(q);c.classList.toggle("hidden",!m),m&&v++});EN&&EN.classList.toggle("hidden",v>0||!q.length)});
+EC&&EC.addEventListener("click",function(){ES&&(ES.value="",ES.dispatchEvent(new Event("input")),ES.focus())});
+var CI=0,DT=q(".cases-dot"),CR=q(".case-card"),CP=i("casePrev"),CN=i("caseNext"),TL=CR.length;
+function shC(i){var n=((i%TL)+TL)%TL;CI=n;CR.forEach(function(c){c.classList.remove("active","fade-in","fade-out")});CR[n].classList.add("active","fade-in");DT.forEach(function(d){d.classList.toggle("active",parseInt(d.getAttribute("data-case")||"0",10)===n)})}
+DT.forEach(function(d){d.addEventListener("click",function(){shC(parseInt(d.getAttribute("data-case")||"0",10))})});
+CP&&CP.addEventListener("click",function(){shC(CI-1)});CN&&CN.addEventListener("click",function(){shC(CI+1)});
+var CT=q(".stat-num");
+if(CT.length&&"IntersectionObserver"in window){var CO=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting){aC(e.target);CO.unobserve(e.target)}})},{threshold:.4});CT.forEach(function(c){CO.observe(c)})}else CT.forEach(function(c){var t=parseInt(c.getAttribute("data-target")||"0",10),s=c.getAttribute("data-suffix")||"";c.textContent=t+s});
+function aC(e){var t=parseInt(e.getAttribute("data-target")||"0",10),s=e.getAttribute("data-suffix")||"",d=1800,st=null;function tk(n){st||(st=n);var p=Math.min(1,(n-st)/d),e=1-Math.pow(1-p,3),v=Math.round(t*e);e.textContent=v+s;p<1&&requestAnimationFrame(tk)}requestAnimationFrame(tk)}
+var CF=i("contactForm"),FS=i("formSubmit");
+CF&&CF.addEventListener("submit",function(e){e.preventDefault();FS&&(FS.textContent="\u2713 Request sent \u2014 we\u2019ll be in touch",FS.classList.add("sent"));setTimeout(function(){FS&&(FS.textContent="Send enquiry",FS.classList.remove("sent"));CF.reset()},3400)});
+var cU=i("consoleUptime"),cQ=i("consoleQueue"),cC=i("consoleCases"),cL=i("consoleLatency"),te={uptime:99.973,queue:6,cases:28,latency:14};
+setInterval(function(){te={uptime:Math.min(99.994,+(te.uptime+(Math.random()-.47)*.003).toFixed(3)),queue:Math.max(1,Math.min(18,te.queue+Math.floor((Math.random()-.5)*3))),cases:te.cases+(Math.random()>.92?1:0),latency:Math.max(7,Math.min(27,te.latency+Math.floor((Math.random()-.5)*4)))};cU&&(cU.textContent=te.uptime+"%");cQ&&(cQ.textContent=te.queue);cC&&(cC.textContent=te.cases);cL&&(cL.textContent=te.latency+" ms")},1350);
+var MT=i("marqueeTrack");if(MT&&!MT.querySelectorAll(".marquee-clone").length){var Mclone=MT.cloneNode(!0);Mclone.querySelectorAll("*").forEach(function(e){e.classList.add("marquee-clone")});MT.parentNode.appendChild(Mclone)};var AB=i("aboutBadge");AB&&(AB.style.animation="floaty 4.3s ease-in-out infinite");
+try{console.log("%cAPEX Training Consults Ltd","font-weight:900;font-size:18px;color:#0284c7;letter-spacing:-0.02em;"),console.log("%cEmpowering Excellence \u00b7 Training \u00b7 Innovation \u00b7 Engineering","color:#64748b;font-size:11px;")}catch(ex){}
+q('a[href^="#"]').forEach(function(a){a.addEventListener("click",function(e){var h=a.getAttribute("href");if(h&&h!=="#"){var t=i(h.slice(1));t&&(e.preventDefault(),window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-90,behavior:"smooth"}))}})})}();
+</script>
+</body>
+</html>
