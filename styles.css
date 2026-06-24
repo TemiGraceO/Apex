@@ -145,6 +145,7 @@ body {
   color: #cfe9ff;
   cursor: pointer;
   transition: all 0.2s;
+  margin-left: 60%;
 }
 .cac-toggle:hover { border-color: #2d88d4; }
 
