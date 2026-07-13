@@ -3,18 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>APEX Training Consults Ltd Empowering Excellence Through Engineering</title>
-  <meta name="description" content="APEX Training Consults Ltd — Professional training, consultancy, engineering support, research, sustainability and technical development services in Nigeria. CAC Registered." />
+  <title>APEX Training Consults Ltd | Empowering Excellence</title>
+  <meta name="description" content="APEX Training Consults Ltd — Professional training, consultancy, engineering support, research, sustainability and technical development services in Nigeria." />
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..700&family=Fragment+Mono&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f172a'/%3E%3Cpath stroke='%230ea5e9' stroke-width='1.7' fill='none' d='M16 6l9 5.2v9.6L16 26 7 20.8v-9.6z M7 11.2L16 16.4l9-5.2 M16 16.4V26'/%3E%3C/svg%3E" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f172a'/%3E%3Cpath stroke='%232563eb' stroke-width='1.7' fill='none' d='M16 6l9 5.2v9.6L16 26 7 20.8v-9.6z M7 11.2L16 16.4l9-5.2 M16 16.4V26'/%3E%3C/svg%3E" />
+  
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<!-- ==================== TOP CAC BAR ==================== -->
-
+<!-- ==================== SCROLL PROGRESS ==================== -->
+<div class="scroll-progress" id="scrollProgress"></div>
 
 <!-- ==================== NAV ==================== -->
 <header class="nav" id="nav">
@@ -45,6 +50,11 @@
         <a href="#contact" class="nav-cta">Partner with us <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
       </nav>
 
+      <!-- Blueprint Toggle (Moved inside nav for proper spacing) -->
+      <button class="cac-toggle" id="bpToggle" type="button">
+        <span class="cac-toggle-text" id="bpToggleText">Dark Mode</span>
+      </button>
+
       <button class="nav-toggle" id="navToggle" aria-label="Menu">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
@@ -53,11 +63,6 @@
     </div>
   </div>
 </header>
-
-
-      <button class="cac-toggle" id="bpToggle" aria-label="Toggle blueprint mode">
-        <span class="cac-toggle-text" id="bpToggleText" style="color: black;width: 40%; z-index: 1000;position: absolute; background-color: rgba(0, 0, 0, 0.7);color: #a6d3f1;padding: 7px 15px;border-radius: 3px;border: 1px solid #b0cfe4;">Blueprint mode</span>
-      </button>
 
 <!-- ==================== MOBILE MENU ==================== -->
 <div class="mobile-overlay" id="mobileOverlay"></div>
@@ -78,7 +83,6 @@
   <div class="mobile-menu-footer">CAC REGISTERED · NIGERIA</div>
 </div>
 
-
 <main>
 
 <!-- ==================== HERO ==================== -->
@@ -86,62 +90,22 @@
   <div class="hero-bp-grid"></div>
   <div class="hero-glows"><div class="hero-glow hero-glow-1"></div><div class="hero-glow hero-glow-2"></div></div>
 
-  <!-- Gears -->
+  <!-- Decorative Gears -->
   <svg class="gear gear-1" viewBox="0 0 120 120" fill="none">
     <g stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.088">
       <rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(0 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(30 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(60 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(90 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(120 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(150 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(180 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(210 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(240 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(270 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(300 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(330 60 60)"/>
       <circle cx="60" cy="60" r="34"/><circle cx="60" cy="60" r="16" fill="white"/>
     </g>
   </svg>
-  <svg class="gear gear-2 gear-rev" viewBox="0 0 120 120" fill="none" style="margin-top: 20%;">
+  <svg class="gear gear-2 gear-rev" viewBox="0 0 120 120" fill="none" >
     <g stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.088">
       <rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(0 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(30 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(60 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(90 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(120 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(150 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(180 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(210 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(240 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(270 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(300 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(330 60 60)"/>
       <circle cx="60" cy="60" r="34"/><circle cx="60" cy="60" r="16" fill="white"/>
     </g>
   </svg>
-  <svg class="gear gear-4 gear-rev"  viewBox="0 0 120 120" fill="none">
-    <g stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.088">
-      <rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(0 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(30 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(60 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(90 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(120 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(150 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(180 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(210 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(240 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(270 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(300 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(330 60 60)"/>
-      <circle cx="60" cy="60" r="34"/><circle cx="60" cy="60" r="16" fill="white"/>
-    </g>
-  </svg>
-  <svg class="gear gear-3" viewBox="0 0 120 120" fill="none">
-    <g stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.088">
-      <rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(0 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(30 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(60 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(90 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(120 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(150 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(180 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(210 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(240 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(270 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(300 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(330 60 60)"/>
-      <circle cx="60" cy="60" r="34"/><circle cx="60" cy="60" r="16" fill="currentColor" fill-opacity="0.09"/>
-    </g>
-  </svg>
-
-  <!-- tech drawing -->
-  <div class="hero-tech-drawing">
-    <svg viewBox="0 0 268 268" fill="none">
-      <circle cx="134" cy="134" r="103" stroke="currentColor" stroke-width="1" stroke-dasharray="4 5"/>
-      <circle cx="134" cy="134" r="62" stroke="currentColor" stroke-width="1"/>
-      <line x1="28" y1="134" x2="240" y2="134" stroke="currentColor" stroke-width="1"/>
-      <line x1="134" y1="28" x2="134" y2="240" stroke="currentColor" stroke-width="1"/>
-      <path d="M28 134 L70 100 L198 100 L240 134 L198 168 L70 168 Z" stroke="currentColor" stroke-width="1.2" class="dash-flow" fill="none"/>
-      <text x="144" y="127" font-size="11" fill="currentColor" font-family="Fragment Mono, monospace">Ø200</text>
-    </svg>
-  </div>
-
-  <!-- measure -->
-  <svg class="hero-measure" viewBox="0 0 320 180" fill="none">
-    <line x1="22" y1="30" x2="298" y2="30" stroke="currentColor" stroke-width="1"/>
-    <line x1="22" y1="19" x2="22" y2="41" stroke="currentColor" stroke-width="1"/>
-    <line x1="298" y1="19" x2="298" y2="41" stroke="currentColor" stroke-width="1"/>
-    <text x="160" y="24" text-anchor="middle" font-size="10" fill="currentColor" font-family="Fragment Mono, monospace">280 mm</text>
-    <line x1="22" y1="30" x2="22" y2="162" stroke="currentColor" stroke-width="1"/>
-    <line x1="10" y1="30" x2="34" y2="30" stroke="currentColor" stroke-width="1"/>
-    <line x1="10" y1="162" x2="34" y2="162" stroke="currentColor" stroke-width="1"/>
-    <text x="15" y="97" font-size="10" fill="currentColor" font-family="Fragment Mono, monospace" transform="rotate(-90 15 97)">130 mm</text>
-  </svg>
-
-  <!-- pulse -->
-  <div class="hero-pulse"><div class="hero-pulse-dot"></div><div class="hero-pulse-ring"></div></div>
 
   <div class="container hero-inner">
     <div class="hero-content">
-
       <h1 class="hero-title reveal" data-delay="80">
         Empowering <span class="text-sky">Excellence</span>
       </h1>
@@ -167,7 +131,7 @@
       </div>
     </div>
 
-    <!-- marquee -->
+    <!-- Marquee -->
     <div class="marquee reveal" data-delay="600">
       <div class="marquee-track" id="marqueeTrack">
         <span><span class="op-80">◉</span> ISO 9001:2015</span>
@@ -201,23 +165,10 @@
 <section id="about" class="section">
   <div class="container about-grid">
     <div class="about-visual">
-      <div class="about-card scanline">
+      <!-- Replaced SVG shapes with Real Image -->
+      <div class="about-card">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Engineering Team" class="about-img">
         <div class="about-card-bp"></div>
-        <svg viewBox="0 0 420 520" fill="none" class="about-svg">
-          <rect x="42" y="62" width="336" height="396" stroke="currentColor" stroke-width="1" stroke-dasharray="4 4"/>
-          <circle cx="210" cy="262" r="113" stroke="currentColor" stroke-width="1.25"/>
-          <circle cx="210" cy="262" r="72" stroke="currentColor" stroke-width="1.15"/>
-          <circle cx="210" cy="262" r="32" stroke="currentColor" stroke-width="1.1"/>
-          <line x1="97" y1="262" x2="323" y2="262" stroke="currentColor" stroke-width="1"/>
-          <line x1="210" y1="149" x2="210" y2="375" stroke="currentColor" stroke-width="1"/>
-          <circle cx="303" cy="262" r="3.7" fill="currentColor"/><circle cx="278" cy="328" r="3.7" fill="currentColor"/>
-          <circle cx="210" cy="356" r="3.7" fill="currentColor"/><circle cx="142" cy="328" r="3.7" fill="currentColor"/>
-          <circle cx="117" cy="262" r="3.7" fill="currentColor"/><circle cx="142" cy="196" r="3.7" fill="currentColor"/>
-          <circle cx="210" cy="170" r="3.7" fill="currentColor"/><circle cx="278" cy="196" r="3.7" fill="currentColor"/>
-          <text x="210" y="476" text-anchor="middle" font-size="11" fill="currentColor" font-family="Fragment Mono, monospace">FIG. 01 — SYSTEM SCHEMATIC / APEX-2026</text>
-          <text x="54" y="82" font-size="10" fill="currentColor" font-family="Fragment Mono, monospace">REV. 02</text>
-          <text x="366" y="82" text-anchor="end" font-size="10" fill="currentColor" font-family="Fragment Mono, monospace">SCALE 1:100</text>
-        </svg>
         <div class="about-card-meta"><span>◉ LIVE</span><span>APEX / ENGINEERING</span></div>
       </div>
       <div class="about-badge" id="aboutBadge">
@@ -266,55 +217,58 @@
     </div>
 
     <div class="service-grid" id="serviceGrid">
+      <!-- Service 1 -->
       <article class="service-card" data-tag="Training">
         <div class="service-visual">
-          <div class="service-shape service-shape-square"></div>
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Professional Training" class="service-img">
         </div>
-        <div class="service-tag-label">Training <span class="op-60">· TR-01</span></div>
-        <h4 class="service-card-title">Professional Training &amp; Certification</h4>
-        <p class="service-card-text">Accredited certification programmes, immersive workshops and enterprise capacity building across engineering, science and technology disciplines.</p>
-        <ul class="service-bullets">
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> ISO 9001 / 14001 / 45001 pathways</li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> HSE, NEBOSH, and competency mapping</li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Custom in-plant curricula &amp; LMS</li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Assessments, audits &amp; re-certification</li>
-        </ul>
-        <a href="#contact" class="service-link">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <div class="service-card-body">
+          <div class="service-tag-label">Training <span class="op-60">· TR-01</span></div>
+          <h4 class="service-card-title">Professional Training &amp; Certification</h4>
+          <p class="service-card-text">Accredited certification programmes, immersive workshops and enterprise capacity building across engineering, science and technology disciplines.</p>
+          <ul class="service-bullets">
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> ISO 9001 / 14001 / 45001 pathways</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> HSE, NEBOSH, and competency mapping</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Custom in-plant curricula &amp; LMS</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
       </article>
 
+      <!-- Service 2 -->
       <article class="service-card" data-tag="Consultancy">
         <div class="service-visual">
-          <div class="service-shape-wrap"><div class="service-shape service-shape-circle"></div><div class="service-shape-ring"></div></div>
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Consultancy" class="service-img">
         </div>
-        <div class="service-tag-label">Consultancy <span class="op-60">· MG-02</span></div>
-        <h4 class="service-card-title">Management &amp; Leadership</h4>
-        <p class="service-card-text">Board-ready advisory across strategy, regulatory compliance, quality systems and operational excellence for public and private sector clients.</p>
-        <ul class="service-bullets">
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Corporate governance frameworks</li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Regulatory &amp; compliance assurance</li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> ESG, quality &amp; process optimisation</li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Leadership development sprints</li>
-        </ul>
-        <a href="#contact" class="service-link">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <div class="service-card-body">
+          <div class="service-tag-label">Consultancy <span class="op-60">· MG-02</span></div>
+          <h4 class="service-card-title">Management &amp; Leadership</h4>
+          <p class="service-card-text">Board-ready advisory across strategy, regulatory compliance, quality systems and operational excellence for public and private sector clients.</p>
+          <ul class="service-bullets">
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Corporate governance frameworks</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Regulatory &amp; compliance assurance</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> ESG, quality &amp; process optimisation</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
       </article>
 
+      <!-- Service 3 -->
       <article class="service-card" data-tag="Engineering">
         <div class="service-visual">
-          <svg viewBox="0 0 120 110" class="service-shape-triangle">
-            <defs><linearGradient id="tg-rs" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#f6b33b"/><stop offset="100%" stop-color="#f97316"/></linearGradient></defs>
-            <polygon points="60,6 112,104 8,104" fill="url(#tg-rs)" />
-          </svg>
+          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Engineering" class="service-img">
         </div>
-        <div class="service-tag-label">Engineering <span class="op-60">· RS-03</span></div>
-        <h4 class="service-card-title">Risk &amp; Safety Engineering</h4>
-        <p class="service-card-text">Quantitative risk, HAZID/HAZOP, safety case development, and full lifecycle accident prevention engineering.</p>
-        <ul class="service-bullets">
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Bow-tie, LOPA, FMEA &amp; QRA</li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Process safety management</li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Emergency response planning</li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Asset integrity assurance</li>
-        </ul>
-        <a href="#contact" class="service-link">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <div class="service-card-body">
+          <div class="service-tag-label">Engineering <span class="op-60">· RS-03</span></div>
+          <h4 class="service-card-title">Risk &amp; Safety Engineering</h4>
+          <p class="service-card-text">Quantitative risk, HAZID/HAZOP, safety case development, and full lifecycle accident prevention engineering.</p>
+          <ul class="service-bullets">
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Bow-tie, LOPA, FMEA &amp; QRA</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Process safety management</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Emergency response planning</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
       </article>
     </div>
   </div>
@@ -546,7 +500,7 @@
       <div class="form-title">Tell us about your project</div>
 
       <div class="form-row">
-        <label><span>Full name</span><input required id="fName" placeholder="Jane Doe" /></label>
+        <label><span>Full name</span><input required id="fName" placeholder="Grace Olorunfemi" /></label>
         <label><span>Work email</span><input required type="email" id="fEmail" placeholder="jane@company.com" /></label>
       </div>
 
@@ -602,43 +556,6 @@
   </div>
 </footer>
 
-
-<script>
-/* APEX Training Consults Ltd — Embedded JS */
-!function(){var d=document,g=d.getElementById;
-function q(e){return d.querySelectorAll(e)} function i(e){return g.call(d,e)}
-var Y=i("year");Y&&(Y.textContent=new Date().getFullYear());
-var B=i("bpToggle"),BT=i("bpToggleText");
-B&&B.addEventListener("click",function(){d.body.classList.toggle("bp-mode"),BT&&(BT.textContent=d.body.classList.contains("bp-mode")?"Paper mode":"Blueprint mode")});
-var N=i("navToggle"),M=i("mobileMenu"),O=i("mobileOverlay"),C=i("mobileMenuClose");
-function oM(){M&&M.classList.add("open"),O&&O.classList.add("open"),d.body.style.overflow="hidden"}
-function cM(){M&&M.classList.remove("open"),O&&O.classList.remove("open"),d.body.style.overflow=""}
-N&&N.addEventListener("click",oM),C&&C.addEventListener("click",cM),O&&O.addEventListener("click",cM),
-q(".mobile-link").forEach(function(e){e.addEventListener("click",cM)});
-var P=i("scrollProgress");P&&window.addEventListener("scroll",function(){var s=window.scrollY,h=d.documentElement.scrollHeight-window.innerHeight;P.style.transform="scaleX("+(h>0?s/h:0)+")"});
-var NL=q(".nav-link"),SX=["home","about","services","expertise","cases","contact"];
-NL.length&&"IntersectionObserver"in window&&function(){var o=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting){var t=e.target.id;NL.forEach(function(l){l.classList.remove("active"),l.getAttribute("href")==="#"+t&&l.classList.add("active")})}})},{threshold:.35,rootMargin:"-80px 0px -50% 0px"});SX.forEach(function(e){var t=i(e);t&&o.observe(t)})}();
-var RV=q(".reveal");
-if(RV.length&&"IntersectionObserver"in window){var RO=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting){var d=parseInt(e.target.getAttribute("data-delay")||"0",10);setTimeout(function(){e.target.classList.add("visible")},d),RO.unobserve(e.target)}})},{threshold:.12,rootMargin:"0px 0px -40px 0px"});RV.forEach(function(e){RO.observe(e)})}else RV.forEach(function(e){e.classList.add("visible")});
-var FB=q(".filter-btn"),SC=q(".service-card");
-FB.length&&FB.forEach(function(b){b.addEventListener("click",function(){FB.forEach(function(b2){b2.classList.remove("active")}),b.classList.add("active");var f=b.getAttribute("data-filter"),DE=q(".filter-date")[0];DE&&(DE.style.display=f==="all"?"flex":"none");SC.forEach(function(c){f&&f!=="all"?c.classList.toggle("hidden",c.getAttribute("data-tag")!==f):c.classList.remove("hidden")})})});
-var ES=i("expSearch"),EC=i("expClear"),EX=q(".exp-card"),EN=q(".exp-no-results")[0];
-ES&&ES.addEventListener("input",function(){var q=this.value.trim().toLowerCase();EC&&EC.classList.toggle("show",q.length>0);var v=0;EX.forEach(function(c){var d=(c.getAttribute("data-search")||"").toLowerCase(),m=!q||d.includes(q);c.classList.toggle("hidden",!m),m&&v++});EN&&EN.classList.toggle("hidden",v>0||!q.length)});
-EC&&EC.addEventListener("click",function(){ES&&(ES.value="",ES.dispatchEvent(new Event("input")),ES.focus())});
-var CI=0,DT=q(".cases-dot"),CR=q(".case-card"),CP=i("casePrev"),CN=i("caseNext"),TL=CR.length;
-function shC(i){var n=((i%TL)+TL)%TL;CI=n;CR.forEach(function(c){c.classList.remove("active","fade-in","fade-out")});CR[n].classList.add("active","fade-in");DT.forEach(function(d){d.classList.toggle("active",parseInt(d.getAttribute("data-case")||"0",10)===n)})}
-DT.forEach(function(d){d.addEventListener("click",function(){shC(parseInt(d.getAttribute("data-case")||"0",10))})});
-CP&&CP.addEventListener("click",function(){shC(CI-1)});CN&&CN.addEventListener("click",function(){shC(CI+1)});
-var CT=q(".stat-num");
-if(CT.length&&"IntersectionObserver"in window){var CO=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting){aC(e.target);CO.unobserve(e.target)}})},{threshold:.4});CT.forEach(function(c){CO.observe(c)})}else CT.forEach(function(c){var t=parseInt(c.getAttribute("data-target")||"0",10),s=c.getAttribute("data-suffix")||"";c.textContent=t+s});
-function aC(e){var t=parseInt(e.getAttribute("data-target")||"0",10),s=e.getAttribute("data-suffix")||"",d=1800,st=null;function tk(n){st||(st=n);var p=Math.min(1,(n-st)/d),e=1-Math.pow(1-p,3),v=Math.round(t*e);e.textContent=v+s;p<1&&requestAnimationFrame(tk)}requestAnimationFrame(tk)}
-var CF=i("contactForm"),FS=i("formSubmit");
-CF&&CF.addEventListener("submit",function(e){e.preventDefault();FS&&(FS.textContent="\u2713 Request sent \u2014 we\u2019ll be in touch",FS.classList.add("sent"));setTimeout(function(){FS&&(FS.textContent="Send enquiry",FS.classList.remove("sent"));CF.reset()},3400)});
-var cU=i("consoleUptime"),cQ=i("consoleQueue"),cC=i("consoleCases"),cL=i("consoleLatency"),te={uptime:99.973,queue:6,cases:28,latency:14};
-setInterval(function(){te={uptime:Math.min(99.994,+(te.uptime+(Math.random()-.47)*.003).toFixed(3)),queue:Math.max(1,Math.min(18,te.queue+Math.floor((Math.random()-.5)*3))),cases:te.cases+(Math.random()>.92?1:0),latency:Math.max(7,Math.min(27,te.latency+Math.floor((Math.random()-.5)*4)))};cU&&(cU.textContent=te.uptime+"%");cQ&&(cQ.textContent=te.queue);cC&&(cC.textContent=te.cases);cL&&(cL.textContent=te.latency+" ms")},1350);
-var MT=i("marqueeTrack");if(MT&&!MT.querySelectorAll(".marquee-clone").length){var Mclone=MT.cloneNode(!0);Mclone.querySelectorAll("*").forEach(function(e){e.classList.add("marquee-clone")});MT.parentNode.appendChild(Mclone)};var AB=i("aboutBadge");AB&&(AB.style.animation="floaty 4.3s ease-in-out infinite");
-try{console.log("%cAPEX Training Consults Ltd","font-weight:900;font-size:18px;color:#0284c7;letter-spacing:-0.02em;"),console.log("%cEmpowering Excellence \u00b7 Training \u00b7 Innovation \u00b7 Engineering","color:#64748b;font-size:11px;")}catch(ex){}
-q('a[href^="#"]').forEach(function(a){a.addEventListener("click",function(e){var h=a.getAttribute("href");if(h&&h!=="#"){var t=i(h.slice(1));t&&(e.preventDefault(),window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-90,behavior:"smooth"}))}})})}();
-</script>
+<script src="script.js"></script>
 </body>
 </html>
