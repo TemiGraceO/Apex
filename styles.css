@@ -489,6 +489,7 @@ a{
   border: 1px solid var(--line); background: rgba(255, 255, 255, 0.72);
   box-shadow: var(--shadow-sm);
 }
+.contact-grid{padding: 0; width: 90%;}
 
 /* ============================================================
    9. ABOUT
