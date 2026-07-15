@@ -1514,7 +1514,10 @@ img { max-width: 100%; display: block; }
   max-width: 100%;
   overflow-x: hidden;
 }
-@media (min-width: 640px) { .exp-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 640px) { .exp-grid { grid-template-columns: repeat(2, 1fr); }
+.container { max-width: var(--container); margin: 0 auto; }
+
+}
 @media (min-width: 1024px) { .exp-grid { grid-template-columns: repeat(4, 1fr); } }
 
 .exp-card {
