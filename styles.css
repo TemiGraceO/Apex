@@ -489,7 +489,7 @@ a{
   border: 1px solid var(--line); background: rgba(255, 255, 255, 0.72);
   box-shadow: var(--shadow-sm);
 }
-.contact-grid{padding: 0; width: 90%;}
+
 
 /* ============================================================
    9. ABOUT
@@ -1927,5 +1927,102 @@ img { max-width: 100%; display: block; }
 
   .hero .gear {
     opacity: 0.1; /* very subtle on small phones */
+  }
+}
+/* ============================================================
+   15. CONTACT — MOBILE CENTERING FIX
+   ============================================================ */
+
+/* Ensure only the contact section’s grid is affected */
+.section-contact .contact-grid,
+#contact .contact-grid,
+section.contact .contact-grid {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Center the whole contact section content on mobile */
+@media (max-width: 768px) {
+  .section-contact,
+  #contact,
+  section.contact {
+    text-align: center;
+  }
+
+  .section-contact .contact-grid,
+  #contact .contact-grid,
+  section.contact .contact-grid {
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Make sure inner blocks don’t exceed viewport */
+  .contact-title,
+  .contact-text,
+  .contact-info,
+  .contact-form-wrap {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+
+  /* Keep form fields from overflowing */
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Fix the broken hover rule */
+.contact-row:hover {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px var(--brand-light);
+  transform: translateY(-2px);
+}
+
+/* ============================================================
+   CONTACT — MOBILE SIDE PADDING FIX
+   ============================================================ */
+
+/* Ensure the contact section never touches the screen edges */
+.section-contact,
+#contact,
+section.contact {
+  padding-left: clamp(1rem, 4vw, 2rem);
+  padding-right: clamp(1rem, 4vw, 2rem);
+}
+
+/* Contact grid should not exceed container */
+.section-contact .contact-grid,
+#contact .contact-grid,
+section.contact .contact-grid {
+  width: 100%;
+  max-width: var(--container, 1240px);
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* On small phones, ensure inner blocks also have side space */
+@media (max-width: 480px) {
+  .section-contact .contact-grid,
+  #contact .contact-grid,
+  section.contact .contact-grid {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .contact-title,
+  .contact-text,
+  .contact-info,
+  .contact-form-wrap,
+  .contact-form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
   }
 }
