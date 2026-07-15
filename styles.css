@@ -1828,6 +1828,7 @@ img { max-width: 100%; display: block; }
         padding-left: 0;
         padding-right: 0;
     }
+
   #home {
     padding-top: 20%;
   }
@@ -1836,8 +1837,8 @@ img { max-width: 100%; display: block; }
   .trust-strip,
   .stats,
   .footer {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 /* ============================================================
