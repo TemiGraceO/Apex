@@ -1902,7 +1902,7 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 480px) {
   .hero-title {
-    font-size: clamp(2.2rem, 10vw, 3rem);
+    font-size: clamp(3rem, 10vw, 3rem);
     font-weight: 900;
     line-height: 0.9;
   }
