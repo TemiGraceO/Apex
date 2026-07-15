@@ -129,8 +129,9 @@ img { max-width: 100%; display: block; }
   /*display: none; Hidden on mobile */
   align-items: center; gap: 0.5rem;
   padding: 0.45rem 1rem; border-radius: 99px;
-  background: var(--surface); border: 1px solid var(--line);
+  background: var(--surface); border: 0.5px solid #6589c2;
   color: var(--ink-2); font-family: var(--font-mono); font-size: 0.7rem;
+  box-shadow: var(--shadow-lg);
   letter-spacing: 0.05em; cursor: pointer; transition: all 0.2s; margin-right: 1rem;margin-top: 5rem;position: absolute;
 }
 .cac-toggle:hover { border-color: var(--brand); color: var(--brand); }
