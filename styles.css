@@ -1150,7 +1150,7 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-inner { position: relative; padding: clamp(5rem, 12vw, 9rem) 0 clamp(4rem, 8vw, 6rem); z-index: 3; }
-.hero-content { max-width: 980px; margin: 0 auto; text-align: center; }
+.hero-content { max-width: 780px; margin: 0 auto; text-align: center; padding-left: 1rem;padding-right: 1rem;}
 .hero-title {
   font-family: var(--font-display); font-size: clamp(3rem, 7vw, 5.5rem);
   font-weight: 800; letter-spacing: -0.04em; line-height: 0.95; text-wrap: balance;
@@ -1807,9 +1807,7 @@ img { max-width: 100%; display: block; }
     width: 800px;
     height: 180px;
   }
-  #home{
-    padding-top: 20%;
-  }
+  
 
   /* Further shrink engineering decor on very small screens */
   .eng-schematic-1 { width: min(260px, 28vw); }
