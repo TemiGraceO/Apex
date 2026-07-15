@@ -1770,7 +1770,7 @@ img { max-width: 100%; display: block; }
     right: -60px;
     top: 10px;
   }
-
+  
   .hero .gear-2 {
     width: 180px;
     height: 180px;
@@ -1824,9 +1824,10 @@ img { max-width: 100%; display: block; }
 
 /* Extra safety: ensure no wide sections cause horizontal scroll on small screens */
 @media (max-width: 768px) {
-  .container {
-    padding: 0 1rem;
-  }
+  *{
+        padding-left: 0;
+        padding-right: 0;
+    }
   #home {
     padding-top: 20%;
   }
