@@ -2012,8 +2012,8 @@ section.contact .contact-grid {
   .section-contact .contact-grid,
   #contact .contact-grid,
   section.contact .contact-grid {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .contact-title,
