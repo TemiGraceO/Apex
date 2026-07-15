@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>APEX Training Consults Ltd | Empowering Excellence</title>
   <meta name="description" content="APEX Training Consults Ltd — Professional training, consultancy, engineering support, research, sustainability and technical development services in Nigeria." />
-  
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..700&family=Fragment+Mono&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
+
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f172a'/%3E%3Cpath stroke='%232563eb' stroke-width='1.7' fill='none' d='M16 6l9 5.2v9.6L16 26 7 20.8v-9.6z M7 11.2L16 16.4l9-5.2 M16 16.4V26'/%3E%3C/svg%3E" />
-  
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -50,9 +50,8 @@
         <a href="#contact" class="nav-cta">Partner with us <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
       </nav>
 
-      <!-- Blueprint Toggle (Moved inside nav for proper spacing) -->
-      <button class="cac-toggle" id="bpToggle" type="button">
-        <span class="cac-toggle-text" id="bpToggleText">Dark Mode</span>
+      <button class="cac-toggle" id="bpToggle" type="button" aria-pressed="false">
+        <span class="cac-toggle-text" id="bpToggleText">Dark mode</span>
       </button>
 
       <button class="nav-toggle" id="navToggle" aria-label="Menu">
@@ -90,6 +89,39 @@
   <div class="hero-bp-grid"></div>
   <div class="hero-glows"><div class="hero-glow hero-glow-1"></div><div class="hero-glow hero-glow-2"></div></div>
 
+  <!-- Engineering Background Layer -->
+  <div class="engineering-field" aria-hidden="true">
+    <svg class="eng-schematic eng-schematic-1" viewBox="0 0 420 260" fill="none" stroke="currentColor">
+      <path d="M18 218H90V166H160V106H255V48H398"/>
+      <path d="M90 166H42M160 106H112M255 48H208M255 106h74v74h52"/>
+      <circle cx="90" cy="218" r="8"/>
+      <circle cx="160" cy="166" r="8"/>
+      <circle cx="255" cy="106" r="8"/>
+      <circle cx="398" cy="48" r="8"/>
+    </svg>
+
+    <svg class="eng-schematic eng-schematic-2" viewBox="0 0 420 260" fill="none" stroke="currentColor">
+      <path d="M22 40h72v58h92v72h74v52h136"/>
+      <path d="M94 98h-46M186 170h-64M260 222h-44M260 170h84V92h46"/>
+      <circle cx="94" cy="40" r="8"/>
+      <circle cx="186" cy="98" r="8"/>
+      <circle cx="260" cy="170" r="8"/>
+      <circle cx="396" cy="222" r="8"/>
+    </svg>
+
+    
+
+
+    <div class="eng-orbit eng-orbit-1"><span></span></div>
+    <div class="eng-orbit eng-orbit-2"><span></span></div>
+
+    <div class="eng-ruler eng-ruler-1"></div>
+    <div class="eng-ruler eng-ruler-2"></div>
+
+    <div class="eng-measure eng-measure-1"><span>12.8m</span></div>
+
+  </div>
+
   <!-- Decorative Gears -->
   <svg class="gear gear-1" viewBox="0 0 120 120" fill="none">
     <g stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.088">
@@ -97,7 +129,7 @@
       <circle cx="60" cy="60" r="34"/><circle cx="60" cy="60" r="16" fill="white"/>
     </g>
   </svg>
-  <svg class="gear gear-2 gear-rev" viewBox="0 0 120 120" fill="none" >
+  <svg class="gear gear-2 gear-rev" viewBox="0 0 120 120" fill="none">
     <g stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.088">
       <rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(0 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(30 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(60 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(90 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(120 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(150 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(180 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(210 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(240 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(270 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(300 60 60)"/><rect x="56.5" y="6" width="7" height="16" rx="1.8" transform="rotate(330 60 60)"/>
       <circle cx="60" cy="60" r="34"/><circle cx="60" cy="60" r="16" fill="white"/>
@@ -123,12 +155,6 @@
         <a href="#services" class="btn btn-ghost">Explore Our Services</a>
       </div>
 
-      <div class="hero-meta reveal" data-delay="500">
-        <span>RC · CAC Nigeria</span><span class="hero-meta-dot">•</span>
-        <span>Multi-Disciplinary</span><span class="hero-meta-dot">•</span>
-        <span>Research-Driven</span><span class="hero-meta-dot">•</span>
-        <span>Sustainability-First</span>
-      </div>
     </div>
 
     <!-- Marquee -->
@@ -147,25 +173,11 @@
   </div>
 </section>
 
-<!-- ==================== TRUST STRIP ==================== -->
-<section class="trust-strip" id="trustStrip">
-  <div class="container trust-inner">
-    <div class="trust-left">
-      <div class="trust-eyebrow">// TRUSTED ACROSS INDUSTRIES</div>
-      <div class="trust-heading">Operators, EPCs &amp; public institutions.</div>
-    </div>
-    <div class="trust-logos">
-      <span>SHELL JV</span><span>NNPC Ltd</span><span>DANGOTE</span><span>BUA GROUP</span>
-      <span>TOTALENERGIES</span><span>FMST</span><span>LAFARGE</span>
-    </div>
-  </div>
-</section>
 
 <!-- ==================== ABOUT ==================== -->
 <section id="about" class="section">
   <div class="container about-grid">
     <div class="about-visual">
-      <!-- Replaced SVG shapes with Real Image -->
       <div class="about-card">
         <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Engineering Team" class="about-img">
         <div class="about-card-bp"></div>
@@ -537,7 +549,7 @@
       </div>
       <p class="footer-about">A professional firm dedicated to training, consultancy, engineering support, research, sustainability and technical development — registered under the Companies and Allied Matters Act 2020, Nigeria.</p>
       <div class="footer-socials">
-        <a href="#" aria-label="𝕏">𝕏</a>
+        <a href="#" aria-label="X">𝕏</a>
         <a href="#" aria-label="LinkedIn">in</a>
         <a href="#" aria-label="Facebook">f</a>
       </div>
