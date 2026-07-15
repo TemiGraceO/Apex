@@ -2000,7 +2000,7 @@ section.contact {
 .section-contact .contact-grid,
 #contact .contact-grid,
 section.contact .contact-grid {
-  width: 100%;
+  width: 90%;
   max-width: var(--container, 1240px);
   margin: 0 auto;
   padding: 0;
@@ -2025,4 +2025,27 @@ section.contact .contact-grid {
     margin-right: auto;
     max-width: 100%;
   }
+}
+/* ============================================================
+   NAV — ALWAYS VISIBLE ON SCROLL
+   ============================================================ */
+
+/* Make nav fixed to top on all screens */
+.nav {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 999 !important;
+}
+
+/* Ensure body content doesn’t hide under the fixed nav */
+body {
+  padding-top: var(--nav-h, 72px);
+}
+
+/* Optional: tighten shadow a bit so it’s clear it’s floating */
+.nav {
+  box-shadow: 0 10px 34px rgba(15, 23, 42, 0.06),
+              0 1px 0 rgba(255, 255, 255, 0.6) inset;
 }
