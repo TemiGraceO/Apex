@@ -1839,3 +1839,79 @@ img { max-width: 100%; display: block; }
     padding-right: 1rem;
   }
 }
+/* ============================================================
+   18. HERO FOCUS: MAKE "EMPOWERING EXCELLENCE" STAND OUT
+   ============================================================ */
+
+/* 1) Make hero title the clear focal point */
+.hero-title {
+  /* Stronger presence */
+  font-weight: 900;          /* extra bold */
+  letter-spacing: -0.05em;   /* tighter, more premium */
+  line-height: 0.9;          /* tighter vertical rhythm */
+  color: #0B1220;            /* slightly darker than default --ink for contrast */
+  text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+}
+
+/* 2) Reduce visual competition from background glows and gears */
+.hero-glow-1,
+.hero-glow-2 {
+  opacity: 0.7; /* soften glows so they don't fight the text */
+}
+
+/* Make hero gears more subtle */
+.hero .gear {
+  opacity: 0.15; /* was 0.22 */
+}
+
+/* 3) Hierarchy: ensure subtitle and lead support, not compete */
+.hero-subtitle {
+  font-weight: 500;
+  color: #475569; /* slightly more muted */
+  margin-top: 0.6rem;
+}
+
+.hero-lead {
+  color: #334155; /* clear but not as strong as title */
+  margin-top: 1.75rem;
+}
+
+/* 4) Mobile: keep title dominant but not cramped */
+@media (max-width: 768px) {
+  .hero-title {
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    line-height: 0.92;
+  }
+
+  .hero .gear {
+    opacity: 0.12; /* even subtler on mobile */
+  }
+
+  .hero-glow-1,
+  .hero-glow-2 {
+    opacity: 0.55;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: clamp(2.2rem, 10vw, 3rem);
+    font-weight: 900;
+    line-height: 0.9;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1.1rem, 4.5vw, 1.5rem);
+    color: #475569;
+  }
+
+  .hero-lead {
+    font-size: clamp(0.95rem, 3.5vw, 1.05rem);
+    color: #334155;
+  }
+
+  .hero .gear {
+    opacity: 0.1; /* very subtle on small phones */
+  }
+}
