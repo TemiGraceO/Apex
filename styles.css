@@ -1764,7 +1764,7 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 768px) {
   .hero .gear-1 {
-    width: 200px;
+    width: 1000px;
     height: 200px;
     right: -60px;
     top: 10px;
@@ -1797,8 +1797,11 @@ img { max-width: 100%; display: block; }
 @media (max-width: 480px) {
   .hero .gear-1,
   .hero .gear-2 {
-    width: 140px;
-    height: 140px;
+    width: 200px;
+    height: 180px;
+  }
+  #home{
+    padding-top: 20%;
   }
 
   /* Further shrink engineering decor on very small screens */
@@ -1822,6 +1825,9 @@ img { max-width: 100%; display: block; }
 @media (max-width: 768px) {
   .container {
     padding: 0 1rem;
+  }
+  #home {
+    padding-top: 20%;
   }
 
   .section,
