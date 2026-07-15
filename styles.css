@@ -134,7 +134,7 @@ img { max-width: 100%; display: block; }
   box-shadow: var(--shadow-lg);
   letter-spacing: 0.05em; cursor: pointer; transition: all 0.2s; margin-right: 1rem;margin-top: 5rem;position: absolute;
 }
-.cac-toggle:hover { border-color: var(--brand); color: var(--brand); }
+.cac-toggle:hover { border-color: rgba(102, 102, 249, 0.575); color: var(--brand); transform: translateY(-1px); box-shadow: var(--shadow-lg); }
 @media (min-width: 1024px) { .cac-toggle { display: inline-flex; } }
 
 .nav-toggle {
@@ -166,7 +166,7 @@ img { max-width: 100%; display: block; }
 .scroll-progress { position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 200; background: linear-gradient(90deg, var(--brand), var(--accent)); transform-origin: left; transform: scaleX(0); }
 
 /* ============ HERO ============ */
-.hero { position: relative; overflow: hidden; background: var(--surface); border-bottom: 1px solid var(--line); }
+.hero { position: relative; overflow: hidden; background: var(--surface); border-bottom: 1px solid var(--line);margin-top: -2%; }
 .hero-bp-grid {
   position: absolute; inset: 0; pointer-events: none; opacity: 0.4;
   background-image: radial-gradient(var(--line) 1px, transparent 1px); background-size: 24px 24px;
