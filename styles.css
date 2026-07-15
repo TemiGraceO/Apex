@@ -1700,6 +1700,7 @@ img { max-width: 100%; display: block; }
 
 .form-row { display: grid; gap: 1.25rem; margin-top: 1.5rem; }
 @media (min-width: 600px) { .form-row { grid-template-columns: 1fr 1fr; } }
+.contact-grid { display: grid; gap: 1.25rem; }
 .contact-form label { display: block; margin-top: 1.25rem; }
 .contact-form label span { display: block; font-size: 0.8rem; color: var(--ink-2); font-weight: 600; margin-bottom: 0.5rem; }
 .contact-form input, .contact-form select, .contact-form textarea {
