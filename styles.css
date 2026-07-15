@@ -912,7 +912,7 @@ body {
 ::selection { background: var(--brand); color: #fff; }
 img { max-width: 100%; display: block; }
 
-.container { max-width: var(--container); margin: 0 auto; padding: 0 clamp(1.25rem, 4vw, 2rem); }
+.container { max-width: var(--container); margin: 0 auto; }
 .section { padding: clamp(4rem, 8vw, 7rem) 0; border-top: none; }
 .section-muted {
   background:
