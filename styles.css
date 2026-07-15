@@ -119,19 +119,19 @@ img { max-width: 100%; display: block; }
 
 .nav-cta {
   margin-left: 1rem; padding: 0.6rem 1.25rem; border-radius: 8px;
-  background: var(--ink); color: #fff !important; font-weight: 600; font-size: 0.875rem;
+  background: var(--brand); color: var(--ink); color: #fff !important; font-weight: 600; font-size: 0.875rem;
   text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.2s;
 }
-.nav-cta:hover { background: var(--brand); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+.nav-cta:hover { background: var(--brand-dark); transform: translateY(-1px); box-shadow: var(--shadow-md); }
 
 /* Blueprint Toggle Fix */
 .cac-toggle {
-  display: none; /* Hidden on mobile */
+  /*display: none; Hidden on mobile */
   align-items: center; gap: 0.5rem;
   padding: 0.45rem 1rem; border-radius: 99px;
   background: var(--surface); border: 1px solid var(--line);
   color: var(--ink-2); font-family: var(--font-mono); font-size: 0.7rem;
-  letter-spacing: 0.05em; cursor: pointer; transition: all 0.2s; margin-right: 1rem;
+  letter-spacing: 0.05em; cursor: pointer; transition: all 0.2s; margin-right: 1rem;margin-top: 5rem;position: absolute;
 }
 .cac-toggle:hover { border-color: var(--brand); color: var(--brand); }
 @media (min-width: 1024px) { .cac-toggle { display: inline-flex; } }
