@@ -84,7 +84,7 @@ img { max-width: 100%; display: block; }
 .op-80 { opacity: 0.8; }
 
 .section-title {
-  font-family: var(--font-display);
+  font-family: 'sans-serif';
   font-size: clamp(2rem, 4vw, 3.25rem);
   font-weight: 700; letter-spacing: -0.03em; line-height: 1.1;
   margin-top: 0.75rem; color: var(--ink);
@@ -529,7 +529,7 @@ img { max-width: 100%; display: block; }
 .about-badge-sub { font-size: 0.75rem; color: var(--muted); }
 
 .about-title {
-  font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem);
+  font-family: 'sans-serif'; font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; margin-top: 1rem;
 }
 .about-text { margin-top: 1.5rem; font-size: 1.05rem; line-height: 1.8; color: var(--ink-2); }
@@ -539,12 +539,10 @@ img { max-width: 100%; display: block; }
   background: var(--surface); transition: all 0.3s; position: relative; overflow: hidden;
 }
 .mini-card::before {
-  content: ""; position: absolute; inset: 0 0 auto; height: 3px; z-index: 4;
-  background: linear-gradient(90deg, var(--brand), var(--accent), #10b981);
+   position: absolute; inset: 0 0 auto; height: 3px; z-index: 4;
+  background: linear-gradient(90deg, var(--brand), var(--accent), #101eb9);
   transform: scaleX(0); transform-origin: left; transition: transform 0.35s ease;
 }
-.mini-card:hover { border-color: var(--brand); box-shadow: 0 0 0 3px var(--brand-light); transform: translateY(-2px); }
-.mini-card:hover::before { transform: scaleX(1); }
 .mini-title { font-size: 0.9rem; font-weight: 700; }
 .mini-sub { font-size: 0.8rem; color: var(--muted); margin-top: 0.25rem; }
 .about-btns { margin-top: 2.5rem; display: flex; gap: 1rem; flex-wrap: wrap; }
@@ -942,7 +940,7 @@ img { max-width: 100%; display: block; }
 .op-80 { opacity: 0.8; }
 
 .section-title {
-  font-family: var(--font-display);
+  font-family: 'sans-serif';
   font-size: clamp(2rem, 4vw, 3.25rem);
   font-weight: 700; letter-spacing: -0.03em; line-height: 1.1;
   margin-top: 0.75rem; color: var(--ink);
@@ -1405,7 +1403,7 @@ img { max-width: 100%; display: block; }
 .about-badge-sub { font-size: 0.75rem; color: var(--muted); }
 
 .about-title {
-  font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem);
+  font-family: 'sans-serif'; font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; margin-top: 1rem;
 }
 .about-text { margin-top: 1.5rem; font-size: 1.05rem; line-height: 1.8; color: var(--ink-2); }
@@ -1420,7 +1418,7 @@ img { max-width: 100%; display: block; }
   transform: scaleX(0); transform-origin: left; transition: transform 0.35s ease;
 }
 .mini-card:hover { border-color: var(--brand); box-shadow: 0 0 0 3px var(--brand-light); transform: translateY(-2px); }
-.mini-card:hover::before { transform: scaleX(1); }
+.mini-card:hover::before { transform: scaleX(1); display: none;}
 .mini-title { font-size: 0.9rem; font-weight: 700; }
 .mini-sub { font-size: 0.8rem; color: var(--muted); margin-top: 0.25rem; }
 .about-btns { margin-top: 2.5rem; display: flex; gap: 1rem; flex-wrap: wrap; }
