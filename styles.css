@@ -1834,7 +1834,7 @@ img { max-width: 100%; display: block; }
     }
 
   #home {
-    padding-top: 20%;
+    padding-top: 0;
   }
 
   .section,
