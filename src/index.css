@@ -1,0 +1,272 @@
+/* Hero display font (only used by the Home hero title and subtitle) */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..700&display=swap");
+
+/* Only what Bootstrap can't do on its own */
+
+/* Smooth anchor scroll with an offset for the sticky navbar (replaces the JS in script.js) */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+/* ===================== HOME HERO ===================== */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 22% 15%, rgba(37, 99, 235, 0.09), transparent 30rem),
+    radial-gradient(circle at 78% 16%, rgba(14, 165, 233, 0.08), transparent 26rem),
+    radial-gradient(circle at 50% 105%, rgba(245, 158, 11, 0.09), transparent 30rem),
+    linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  border-bottom: 1px solid #e2e8f0;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 180px;
+  background: linear-gradient(to bottom, transparent, rgba(248, 250, 252, 0.92));
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Blueprint grid */
+.hero-bp-grid {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.7;
+  background-image:
+    linear-gradient(rgba(37, 99, 235, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.045) 1px, transparent 1px),
+    radial-gradient(rgba(15, 23, 42, 0.08) 1px, transparent 1px);
+  background-size: 96px 96px, 96px 96px, 16px 16px;
+  -webkit-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.65) 56%, #000 100%);
+  mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.65) 56%, #000 100%);
+}
+
+/* Soft colour glows */
+.hero-glows {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.hero-glow-1,
+.hero-glow-2 {
+  position: absolute;
+  opacity: 0.7;
+  filter: blur(60px);
+}
+.hero-glow-1 {
+  width: 600px;
+  height: 600px;
+  top: -200px;
+  right: -100px;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.08), transparent 70%);
+}
+.hero-glow-2 {
+  width: 500px;
+  height: 500px;
+  bottom: -200px;
+  left: -100px;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.06), transparent 70%);
+}
+
+/* Engineering schematics, rings and rulers */
+.engineering-field {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+.engineering-field::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(115deg, transparent 0 42%, rgba(37, 99, 235, 0.045) 42% 42.4%, transparent 42.4% 100%),
+    linear-gradient(65deg, transparent 0 58%, rgba(245, 158, 11, 0.04) 58% 58.35%, transparent 58.35% 100%);
+  opacity: 0.75;
+}
+
+.eng-schematic {
+  position: absolute;
+  color: rgba(37, 99, 235, 0.24);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  max-width: 100%;
+}
+.eng-schematic path,
+.eng-schematic circle {
+  vector-effect: non-scaling-stroke;
+}
+.eng-schematic-1 { left: 4%; top: 18%; width: min(420px, 34vw); }
+.eng-schematic-2 { right: -5%; top: 52%; width: min(460px, 38vw); transform: rotate(180deg); opacity: 0.55; }
+
+.eng-ring {
+  position: absolute;
+  border: 1px dashed rgba(37, 99, 235, 0.22);
+  border-radius: 999px;
+  max-width: 100%;
+}
+.eng-ring::before {
+  content: "";
+  position: absolute;
+  inset: 18%;
+  border: 1px solid rgba(37, 99, 235, 0.1);
+  border-radius: inherit;
+}
+.eng-ring-1 { width: 250px; height: 250px; right: 6%; top: 17%; }
+.eng-ring-2 { width: 190px; height: 190px; left: 10%; bottom: 14%; }
+
+.eng-ruler {
+  position: absolute;
+  height: 22px;
+  width: 270px;
+  color: rgba(15, 23, 42, 0.16);
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  max-width: 100%;
+}
+.eng-ruler::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(90deg, transparent 0 13px, currentColor 13px 15px);
+  opacity: 0.55;
+}
+.eng-ruler-1 { right: 6%; top: 34%; transform: rotate(-18deg); }
+.eng-ruler-2 { left: 6%; bottom: 34%; transform: rotate(24deg); }
+
+/* Hero content (centered) */
+.hero-inner {
+  position: relative;
+  z-index: 3;
+  padding-top: clamp(1.5rem, 4vw, 5rem);
+  padding-bottom: clamp(3rem, 6vw, 4.5rem);
+}
+.hero-content {
+  max-width: 780px;
+}
+.hero-title {
+  margin: 0;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  line-height: 0.9;
+  color: #0b1220;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+  text-wrap: balance;
+}
+.hero-accent {
+  color: #2563eb;
+}
+.hero-subtitle {
+  margin: 0.6rem 0 0;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #475569;
+}
+.hero-lead {
+  max-width: 640px;
+  margin: 1.75rem auto 0;
+  font-size: clamp(0.5rem, 1.35vw, 1rem);
+  line-height: 1.5;
+  color: #334155;
+}
+
+@media (max-width: 768px) {
+  .hero-title { letter-spacing: -0.04em; line-height: 0.92; }
+  .hero-glow-1,
+  .hero-glow-2 { opacity: 0.55; }
+  .eng-schematic-1 { left: 2%; }
+  .eng-schematic-2 { right: -2%; }
+  .eng-ring-1 { right: 2%; }
+  .eng-ring-2 { left: 2%; }
+  .eng-ruler-1 { right: 2%; }
+  .eng-ruler-2 { left: 2%; }
+  .hero-inner { padding-top: clamp(5rem, 4vw, 3rem); padding-bottom: clamp(2rem, 5vw, 3rem); }
+}
+
+@media (max-width: 576px) {
+  .hero-title { font-size: clamp(2.5rem, 8vw, 4.5rem); line-height: 0.95; }
+  .hero-subtitle { font-size: clamp(1.3rem, 5vw, 2rem); }
+  .hero-lead { font-size: clamp(0.9rem, 4vw, 1rem); }
+  .eng-schematic-1 { width: min(320px, 32vw); }
+  .eng-schematic-2 { width: min(340px, 34vw); }
+  .eng-ring-1 { width: 200px; height: 200px; }
+  .eng-ring-2 { width: 160px; height: 160px; }
+  .eng-ruler { width: 220px; }
+}
+
+@media (max-width: 991.98px) {
+  .hero-inner {
+    padding-top: 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 3rem; line-height: 0.9; }
+  .hero-subtitle { font-size: clamp(1.1rem, 4.5vw, 1.5rem); }
+  .hero-lead { font-size: clamp(0.95rem, 3.5vw, 1.05rem); }
+  .eng-schematic-1 { width: min(260px, 28vw); }
+  .eng-schematic-2 { width: min(280px, 30vw); }
+  .eng-ring-1 { width: 160px; height: 160px; }
+  .eng-ring-2 { width: 130px; height: 130px; }
+  .eng-ruler { width: 180px; }
+}
+
+/* ===================== CASES ===================== */
+
+/* Fade when the slide changes */
+.case-fade {
+  animation: case-fade 0.4s ease both;
+}
+@keyframes case-fade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .case-fade {
+    animation: none;
+  }
+}
+.btn .bi-arrow-right {
+  display: inline-block;
+  transition: transform 0.2s;
+}
+.btn:hover .bi-arrow-right {
+  transform: translateX(3px);
+}
+/* Hero buttons: compact, static */
+.hero-btn {
+  padding: 0.65rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: none;
+}
+.hero-btn-primary {
+  box-shadow: 0 6px 16px rgba(13, 110, 253, 0.28);
+}
+.hero-btn-outline {
+  background-color: #fff;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12);
+}
