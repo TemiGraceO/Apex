@@ -87,7 +87,7 @@ function Contact() {
   return (
     <section id="contact" className="py-5 bg-body-tertiary border-top">
       <div className="container py-lg-4">
-        <div className="row g-5">
+        <div className="row gy-5 gx-lg-5">
           <div className="col-lg-6">
             <SectionHeader
               className="mb-4"
@@ -115,7 +115,7 @@ function Contact() {
                   </div>
                   <div>
                     <div className="small text-uppercase text-muted fw-semibold">{r.label}</div>
-                    <div className="fw-semibold">{r.value}</div>
+                    <div className="fw-semibold text-break">{r.value}</div>
                   </div>
                 </div>
               ))}

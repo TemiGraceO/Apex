@@ -5,7 +5,7 @@ function About() {
   return (
     <section id="about" className="py-5">
       <div className="container py-lg-4">
-        <div className="row align-items-center g-5">
+        <div className="row align-items-center gy-5 gx-lg-5">
           <div className="col-lg-6">
             <div className="position-relative rounded-4 overflow-hidden shadow">
               <img
