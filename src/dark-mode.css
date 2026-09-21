@@ -1,8 +1,3 @@
-/* Dark mode.
-   Bootstrap 5.3 switches most colours by itself when <html> has data-bs-theme="dark".
-   This file sets the site's own dark palette and fixes the few hard-coded light styles.
-   Import it AFTER index.css. */
-
 [data-bs-theme="dark"] {
   --bs-body-bg: #0b1220;
   --bs-body-bg-rgb: 11, 18, 32;
@@ -11,10 +6,9 @@
   --bs-secondary-bg: #16213a;
   --bs-secondary-bg-rgb: 22, 33, 58;
   --bs-border-color: #1e293b;
-  --bs-dark-rgb: 2, 6, 23; /* Stats and Footer use bg-dark */
+  --bs-dark-rgb: 2, 6, 23;
 }
 
-/* Dark buttons would vanish on a dark page, so they flip to light */
 [data-bs-theme="dark"] .btn-dark {
   --bs-btn-color: #0b1220;
   --bs-btn-bg: #e2e8f0;
@@ -37,7 +31,6 @@
   --bs-btn-active-border-color: #e2e8f0;
 }
 
-/* Hero */
 [data-bs-theme="dark"] .hero {
   background:
     radial-gradient(circle at 22% 15%, rgba(37, 99, 235, 0.16), transparent 30rem),
@@ -81,7 +74,6 @@
   color: rgba(226, 232, 240, 0.18);
 }
 
-/* Hero buttons. :where() keeps these low priority so hover and focus styles still win */
 :where([data-bs-theme="dark"]) .hero-btn-primary {
   box-shadow: 0 6px 16px rgba(13, 110, 253, 0.35);
 }
@@ -90,7 +82,6 @@
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
 }
 
-/* Cases and cards get a slightly deeper shadow so they stay readable */
 [data-bs-theme="dark"] .shadow-sm {
   --bs-box-shadow-sm: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.4);
 }

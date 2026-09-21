@@ -16,7 +16,7 @@ const sectionIds = links.map((l) => l.id);
 interface ThemeToggleProps {
   theme: Theme;
   onToggle: () => void;
-  display: string; // Bootstrap display classes, so it can show on mobile or desktop only
+  display: string; 
 }
 
 function ThemeToggle({ theme, onToggle, display }: ThemeToggleProps) {

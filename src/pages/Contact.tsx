@@ -34,13 +34,11 @@ function Contact() {
 
     const formEl = e.currentTarget;
 
-    // Show Bootstrap validation messages instead of sending
     if (!formEl.checkValidity()) {
       setValidated(true);
       return;
     }
 
-    // Honeypot: real visitors never tick this hidden box
     if (new FormData(formEl).get("botcheck")) return;
 
     if (!ACCESS_KEY) {
@@ -144,7 +142,6 @@ function Contact() {
               <div className="small text-uppercase text-muted fw-semibold">Enquiry form</div>
               <h3 className="h4 fw-bold mb-4">Tell us about your project</h3>
 
-              {/* Honeypot field for spam bots, hidden from people */}
               <input
                 type="checkbox"
                 name="botcheck"

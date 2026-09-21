@@ -10,7 +10,7 @@ export interface Service {
 }
 
 export interface Capability {
-  icon: string; // Bootstrap Icons class suffix, e.g. "gear" -> bi-gear
+  icon: string; 
   title: string;
   text: string;
   code: string;

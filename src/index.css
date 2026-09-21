@@ -1,15 +1,10 @@
-/* Hero display font (only used by the Home hero title and subtitle) */
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..700&display=swap");
 
-/* Only what Bootstrap can't do on its own */
-
-/* Smooth anchor scroll with an offset for the sticky navbar (replaces the JS in script.js) */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
 }
 
-/* ===================== HOME HERO ===================== */
 
 .hero {
   position: relative;
@@ -32,7 +27,6 @@ html {
   z-index: 1;
 }
 
-/* Blueprint grid */
 .hero-bp-grid {
   position: absolute;
   inset: 0;
@@ -47,7 +41,6 @@ html {
   mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.65) 56%, #000 100%);
 }
 
-/* Soft colour glows */
 .hero-glows {
   position: absolute;
   inset: 0;
@@ -74,7 +67,6 @@ html {
   background: radial-gradient(circle, rgba(245, 158, 11, 0.06), transparent 70%);
 }
 
-/* Engineering schematics, rings and rulers */
 .engineering-field {
   position: absolute;
   inset: 0;
@@ -142,7 +134,6 @@ html {
 .eng-ruler-1 { right: 6%; top: 34%; transform: rotate(-18deg); }
 .eng-ruler-2 { left: 6%; bottom: 34%; transform: rotate(24deg); }
 
-/* Hero content (centered) */
 .hero-inner {
   position: relative;
   z-index: 3;
@@ -223,9 +214,6 @@ html {
   .eng-ruler { width: 180px; }
 }
 
-/* ===================== CASES ===================== */
-
-/* Fade when the slide changes */
 .case-fade {
   animation: case-fade 0.4s ease both;
 }
@@ -255,7 +243,7 @@ html {
 .btn:hover .bi-arrow-right {
   transform: translateX(3px);
 }
-/* Hero buttons: compact, static */
+
 .hero-btn {
   padding: 0.65rem 1.5rem;
   font-size: 0.95rem;

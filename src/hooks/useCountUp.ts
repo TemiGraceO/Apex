@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 
-// Counts from 0 to `target` (ease-out) the first time the element scrolls into view.
 export function useCountUp(target: number, duration = 1800) {
   const ref = useRef<HTMLDivElement>(null);
   const [value, setValue] = useState(0);

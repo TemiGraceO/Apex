@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 
-// Returns the id of the section currently crossing a thin band near the
-// middle of the viewport. Pass a stable (module level) array of ids.
 export function useScrollSpy(ids: string[]) {
   const [active, setActive] = useState(ids[0]);
 

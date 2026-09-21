@@ -75,10 +75,10 @@ function Footer() {
       <div className="border-top border-secondary">
         <div className="container py-3 d-flex flex-column flex-md-row justify-content-between gap-2 small text-white-50">
           <span>
-            © {new Date().getFullYear()} APEX Training Consults Ltd. All rights reserved. ·
-            RC Number · CAC, Nigeria.
+            © {new Date().getFullYear()} APEX Training Consults Ltd. All rights reserved.
+            RC Number  CAC, Nigeria.
           </span>
-          <span>Empowering Excellence · Training · Innovation · Engineering</span>
+          <span>Empowering Excellence  Training  Innovation  Engineering</span>
         </div>
       </div>
     </footer>
